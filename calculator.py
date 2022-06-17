@@ -3,7 +3,7 @@ from unittest import result
 
 class Calculator:
   
-  def __init__(self, save_result_on_memory = False):
+  def __init__(self, save_result_on_memory = True):
     self._result = 0
     self._save_result_on_memory = save_result_on_memory
 

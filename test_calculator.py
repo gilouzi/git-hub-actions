@@ -19,7 +19,7 @@ class TestCalculator(unittest.TestCase):
     self.assertEqual(8, calculator.get_result())
 
   def test_result_is_zero_after_getting_result(self):
-    calculator = Calculator(True)
+    calculator = Calculator(False)
     calculator.add(5)
     calculator.get_result()
     self.assertEqual(0, calculator.get_result())
