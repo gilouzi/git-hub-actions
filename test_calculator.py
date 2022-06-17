@@ -19,13 +19,13 @@ class TestCalculator(unittest.TestCase):
     self.assertEqual(8, calculator.get_result())
 
   def test_result_is_zero_after_getting_result(self):
-    calculator = Calculator()
+    calculator = Calculator(True)
     calculator.add(5)
     calculator.get_result()
     self.assertEqual(0, calculator.get_result())
 
   def test_result_is_saved_after_getting_result(self):
-    calculator = Calculator(True)
+    calculator = Calculator()
     calculator.add(5)
     calculator.get_result()
     self.assertEqual(5, calculator.get_result())
