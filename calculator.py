@@ -10,8 +10,12 @@ class Calculator:
   def add(self, number):
     self._result += number
 
+  def subtract(self, number):
+    self._result -= number
+
   def get_result(self):
     result = self._result
     if not self._save_result_on_memory:
       self._result = 0
     return result
+  
