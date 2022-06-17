@@ -51,4 +51,4 @@ class TestCalculator(unittest.TestCase):
         calculator = Calculator()
         calculator.add(5)
         calculator.subtract(3)
-        self.assertEqual(-2, calculator.get_result())
+        self.assertEqual(2, calculator.get_result())
